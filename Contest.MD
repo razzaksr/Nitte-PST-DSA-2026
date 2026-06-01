@@ -6,3 +6,8 @@ Day1 Assignments:
 Day2 Assignments:
 1. https://leetcode.com/problems/set-matrix-zeroes/
 2. https://leetcode.com/problems/valid-palindrome/
+
+Day3 Assignments:
+1. https://leetcode.com/problems/power-of-three/description/
+2. https://leetcode.com/problems/reverse-bits/description/
+3. https://leetcode.com/problems/single-number/description/
