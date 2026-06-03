@@ -46,3 +46,33 @@ Loan applied: Education Loan for applicant 1
 Applicant 0 loans: [Personal Loan, Business Loan]
 Loans cancelled for applicant 0
 Applicant 0 loans: [null, null]
+
+
+Day5 Assignments:
+1. Problem Statement: Meeting Rooms
+You are given an array of meeting time intervals, where each interval is represented as [start, end]. A person can only attend one meeting at a time.
+Write a function canAttendMeetings(int[][] intervals) that determines if a person can attend all meetings without any overlaps.
+
+Example 1
+Input:
+intervals = [[0,30],[5,10],[15,20]]
+Output:
+false
+Explanation:  
+Meeting [0,30] overlaps with [5,10] and [15,20]. The person cannot attend all meetings.
+
+Example 2
+Input:
+intervals = [[7,10],[2,4]]
+Output:
+true
+Explanation:  
+No meetings overlap. The person can attend all meetings.
+
+Constraints
+0 <= intervals.length <= 10^4
+intervals[i].length == 2
+0 <= start < end <= 10^6
+
+2. https://leetcode.com/problems/house-robber/description/
+3. Validate IPv4 using regex, custom exception and logs
