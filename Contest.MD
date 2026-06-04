@@ -76,3 +76,7 @@ intervals[i].length == 2
 
 2. https://leetcode.com/problems/house-robber/description/
 3. Validate IPv4 using regex, custom exception and logs
+
+Day6 Assignments:
+1. https://leetcode.com/problems/valid-parentheses/
+2. https://leetcode.com/problems/daily-temperatures/description/
