@@ -80,3 +80,7 @@ intervals[i].length == 2
 Day6 Assignments:
 1. https://leetcode.com/problems/valid-parentheses/
 2. https://leetcode.com/problems/daily-temperatures/description/
+
+Day7 Assignments:
+1. https://leetcode.com/problems/majority-element/
+2. https://leetcode.com/problems/word-pattern/description/
