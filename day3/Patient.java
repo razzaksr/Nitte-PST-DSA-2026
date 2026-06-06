@@ -1,6 +1,8 @@
 package day3;
 
-public class Patient implements Comparable<Patient>{
+import java.io.Serializable;
+
+public class Patient implements Serializable, Comparable<Patient>{
     public Patient() {}
     public Patient(String name, int age, String gender, double weight, double height) {
         this.name = name;

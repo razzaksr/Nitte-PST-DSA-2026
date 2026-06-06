@@ -84,3 +84,9 @@ Day6 Assignments:
 Day7 Assignments:
 1. https://leetcode.com/problems/majority-element/
 2. https://leetcode.com/problems/word-pattern/description/
+
+Day8 Assignments:
+1. Serialized POJO Class: Feedback contains properties of trainerName(String), batchId(String), studentUsn(String), rating(double), comments(String)
+    perform followings:
+    1. store atleast 3 feedbacks objects as list into file
+    2. read feedbacks by usn
