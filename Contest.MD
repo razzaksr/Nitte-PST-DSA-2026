@@ -90,3 +90,6 @@ Day8 Assignments:
     perform followings:
     1. store atleast 3 feedbacks objects as list into file
     2. read feedbacks by usn
+Day9 Assignments:
+1. https://leetcode.com/problems/building-h2o/description/
+2. https://leetcode.com/problems/squares-of-a-sorted-array/
