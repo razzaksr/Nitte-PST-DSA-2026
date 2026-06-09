@@ -93,3 +93,29 @@ Day8 Assignments:
 Day9 Assignments:
 1. https://leetcode.com/problems/building-h2o/description/
 2. https://leetcode.com/problems/squares-of-a-sorted-array/
+Day10 Assignments:
+1. https://www.hackerrank.com/challenges/array-left-rotation/problem
+2. Create the following tables and generate ER Diagram:
+    Customer(CustomerID, CustomerName, DOB, ContactNo)
+    PolicyType(PolicyType, PremiumRate, CoverageYears)
+    Branch(BranchID, BranchName, Manager)
+    Policy(PolicyID, CustomerID, PolicyType, PremiumAmount, BranchID)
+
+    Insert sample data:
+    Customers:
+    C1: Ramesh, 1985‑05‑10, 9876543210
+    C2: Kavya, 1990‑09‑15, 9123456789
+
+    PolicyTypes:
+    Health – 5% premium, 10 years coverage
+    Life – 8% premium, 20 years coverage
+    Vehicle – 6% premium, 5 years coverage
+
+    Branches:
+    B1: Bangalore – Manager: Anil
+    B2: Mysore – Manager: Sneha
+
+    Policies:
+    P1: Ramesh, Health, 20000, Bangalore
+    P2: Ramesh, Vehicle, 15000, Bangalore
+    P3: Kavya, Life, 50000, Mysore

@@ -578,3 +578,283 @@ Input: s = "pwwkew"
 Output: 3
 Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
+
+
+java.io
+File
+	file and directory
+Operations: Readers, Writers, Streams
+CRUD
+
+Stream:
+	InputStream/ read
+		DataInputStream
+		ObjectInputStream
+		FileInputStream
+		InflaterInputStream
+	OutputStrea. write
+		DataOutputStream
+		FileOutputStream
+		ObjectOutputStream
+		DeflaterOutputStream
+FileReader
+FileWriter
+
+
+
+Java End-of-file
+The challenge here is to read  lines of input until you reach EOF, then number and print all  lines of content.
+
+Input Format
+Read some unknown  lines of input from stdin(System.in) until you reach EOF; each line of input contains a non-empty String.
+
+Output Format
+For each line, print the line number, followed by a single space, and then the line content received as input.
+
+Sample Input
+Hello world
+I am a file
+Read me until end-of-file.
+
+Sample Output
+1 Hello world
+2 I am a file
+3 Read me until end-of-file.
+
+
+Serialization:
+	implements Serializable>> interface in your pojo
+	serialize	>> ObjectOutputStream
+	deserialize		>> ObjectInputStream
+
+Multithread:
+	Multiple access/ thread to the resource class 
+	resource class: class must inherit either Thread Class/ Runnable 
+		interface
+	public void run(){}
+	
+	Thread life cycle:
+		created/born>> 
+		execute>> run/ start
+		waiting: sleep/wait
+		abort: stop
+
+
+1195. Fizz Buzz Multithreaded
+You have the four functions:
+
+printFizz that prints the word "fizz" to the console,
+printBuzz that prints the word "buzz" to the console,
+printFizzBuzz that prints the word "fizzbuzz" to the console, and
+printNumber that prints a given integer to the console.
+You are given an instance of the class FizzBuzz that has four functions: fizz, buzz, fizzbuzz and number. The same instance of FizzBuzz will be passed to four different threads:
+
+Thread A: calls fizz() that should output the word "fizz".
+Thread B: calls buzz() that should output the word "buzz".
+Thread C: calls fizzbuzz() that should output the word "fizzbuzz".
+Thread D: calls number() that should only output the integers.
+Modify the given class to output the series [1, 2, "fizz", 4, "buzz", ...] where the ith token (1-indexed) of the series is:
+
+"fizzbuzz" if i is divisible by 3 and 5,
+"fizz" if i is divisible by 3 and not 5,
+"buzz" if i is divisible by 5 and not 3, or
+i if i is not divisible by 3 or 5.
+Implement the FizzBuzz class:
+
+FizzBuzz(int n) Initializes the object with the number n that represents the length of the sequence that should be printed.
+void fizz(printFizz) Calls printFizz to output "fizz".
+void buzz(printBuzz) Calls printBuzz to output "buzz".
+void fizzbuzz(printFizzBuzz) Calls printFizzBuzz to output "fizzbuzz".
+void number(printNumber) Calls printnumber to output the numbers.
+ 
+
+Example 1:
+Input: n = 15
+Output: [1,2,"fizz",4,"buzz","fizz",7,8,"fizz","buzz",11,"fizz",13,14,"fizzbuzz"]
+
+Example 2:
+Input: n = 5
+Output: [1,2,"fizz",4,"buzz"]
+
+
+
+Lambda Expression:
+	(parameter1, parameter2)->{}
+	parameter->{}
+
+Method reference:
+	Class::method
+	eg:
+		Integer::parseInt
+		String::getBytes
+		String::toCharArray
+		String::compareTo
+		String::equals
+	
+Functional Interface:
+	only if interface contains one abstract method
+	direct call no inheritance required
+
+1114. Print in Order
+Suppose we have a class:
+
+public class Foo {
+  public void first() { print("first"); }
+  public void second() { print("second"); }
+  public void third() { print("third"); }
+}
+
+The same instance of Foo will be passed to three different threads. Thread A will call first(), thread B will call second(), and thread C will call third(). Design a mechanism and modify the program to ensure that second() is executed after first(), and third() is executed after second().
+
+Note: We do not know how the threads will be scheduled in the operating system, even though the numbers in the input seem to imply the ordering. The input format you see is mainly to ensure our tests' comprehensiveness.
+
+Example 1:
+Input: nums = [1,2,3]
+Output: "firstsecondthird"
+Explanation: There are three threads being fired asynchronously. The input [1,2,3] means thread A calls first(), thread B calls second(), and thread C calls third(). "firstsecondthird" is the correct output.
+
+Example 2:
+Input: nums = [1,3,2]
+Output: "firstsecondthird"
+Explanation: The input [1,3,2] means thread A calls first(), thread B calls third(), and thread C calls second(). "firstsecondthird" is the correct output.
+
+
+2942. Find Words Containing Character
+You are given a 0-indexed array of strings words and a character x.
+Return an array of indices representing the words that contain the character x.
+Note that the returned array may be in any order.
+
+Example 1:
+Input: words = ["leet","code"], x = "e"
+Output: [0,1]
+Explanation: "e" occurs in both words: "leet", and "code". Hence, we return indices 0 and 1.
+
+Example 2:
+Input: words = ["abc","bcd","aaaa","cbc"], x = "a"
+Output: [0,2]
+Explanation: "a" occurs in "abc", and "aaaa". Hence, we return indices 0 and 2.
+
+Example 3:
+Input: words = ["abc","bcd","aaaa","cbc"], x = "z"
+Output: []
+Explanation: "z" does not occur in any of the words. Hence, we return an empty array.
+
+
+41. First Missing Positive
+Given an unsorted integer array nums. Return the smallest positive integer that is not present in nums.
+You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
+
+Example 1:
+Input: nums = [1,2,0]
+Output: 3
+Explanation: The numbers in the range [1,2] are all in the array.
+
+Example 2:
+Input: nums = [3,4,-1,1]
+Output: 2
+Explanation: 1 is in the array but 2 is missing.
+
+Example 3:
+Input: nums = [7,8,9,11,12]
+Output: 1
+Explanation: The smallest positive integer 1 is missing.
+
+generics:
+	Generic class
+	Generic methods
+	Generic Interface
+	
+Generic methods are a very efficient way to handle multiple datatypes using a single method. This problem will test your knowledge on Java Generic methods.
+Let's say you have an integer array and a string array. You have to write a single method printArray that can print all the elements of both arrays. The method should be able to accept both integer arrays or string arrays.
+You are given code in the editor. Complete the code so that it prints the following lines:
+1
+2
+3
+Hello
+World
+
+
+Ternary search on generics
+
+
+Quick Sort
+
+Immutable class
+
+Solid Principles:
+
+S-Single Responsibility 
+Patient Class responsible to have properties
+HealthMetricslClass responsible to perform operational task such as
+			bmi, bmr, body age 
+
+O-Open/Close :
+Google	Class	
+YouTube extends Google	// follows open/close
+Drive extends Google		// open/close
+PlayStore extends YouTube	// not followed
+Facebook extends Goolge	// followed
+Insta extends Facebook		// nott 
+Thread extends Insta		// not
+
+
+L - Liskov substitution
+List>> parent
+add, remove, get, isEmpty
+ArrayList>> child
+LinkedList>> child
+
+
+I-Interface  segregation
+Banking interface >> Deposit, Withdraw
+ATM >> withdraw	// violated Interface segregation
+
+eg:
+Credit Interface>> Deposit
+Debit interface>> withdraw
+ATM implement Debit	// follows interface segregation
+
+D-Dependency inversion:
+File	>> storage
+Database>> storage
+CRUD>> storage object may be file or database
+User>> may not know which has depended
+
+
+DBMS:
+RDBMS
+
+Database
+	Tables
+		Columns
+			types: varchar, int, double, bigint, 
+					blob
+			index: primary key, unique, foreign
+			default, auto increment, 
+		rows/ records:
+
+Mysql>> server
+	mysqli/ MySQL shell	>> CLI
+	workbench	>> GUI
+
+CRUD:  SQL
+language types:
+
+DDL: create, drop, alter
+database, trable, user, sequence, views, procedures, triggers, functions
+DML:  on records
+	 insert, update, delete
+DQL: fetch, joins
+	select
+DCL: authorize, unauthorize operations on tables
+	grant, revoke
+TCL: Transaction
+	commit, rollback
+
+
+
+Normal forms:
+ER Diagram Generation
+DML
+DQL
+Joins
