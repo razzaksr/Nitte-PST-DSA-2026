@@ -34,7 +34,7 @@ insert into transactions values(20251021,now(),450000.8,98765456765653,4755);
 insert into transactions values(20260110,now(),200.5,87656765665654,1234);
 
 select * from transactions;
-DQL where
+-- DQL where
 select * from creditcard where card_no=98765456765653;
 select * from transactions where t_by=87656765665654;
 
