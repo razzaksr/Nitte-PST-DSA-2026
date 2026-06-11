@@ -168,3 +168,11 @@ Day11 Assignments:
     c. Log in as policy_admin and try to:
         Drop a table → should succeed.
         Grant privileges to another user → should succeed.
+
+
+Day12 Assignments:
+Consider the following is mysql table:
+    Customer(CustomerID, CustomerName, DOB, ContactNo)
+    and perform JDBC operations as listed below
+1. Adding new customer
+2. Fetch customers having same DOB

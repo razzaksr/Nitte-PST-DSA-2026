@@ -955,3 +955,29 @@ Adding MySQL Dependency:
 
 
 
+
+
+
+
+JDBC:
+	CRUD
+	Deployment
+		right click on your project folder>> open in integrated terminal
+		execute following maven command:
+			mvn clean package
+
+				compile source code, test code, runs the test
+				it will generate .jar in your target folder
+
+	execute jar file:
+		java -jar patient-crud-1.0-SNAPSHOT-shaded.jar
+				or
+			from project folder itself
+		java -jar target/patient-crud-1.0-SNAPSHOT-shaded.jar
+
+
+
+	store our jar in .m2(local repo) as dependency:
+		mvn clean install
+
+
