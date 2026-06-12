@@ -170,7 +170,11 @@ Day11 Assignments:
         Grant privileges to another user → should succeed.
 
 
-Day12 Assignments:
+Day12 Assessment:
+    https://www.hackerrank.com/dlithe-nitte-assessment-2026
+
+
+Day13 Assignments:
 Consider the following is mysql table:
     Customer(CustomerID, CustomerName, DOB, ContactNo)
     and perform JDBC operations as listed below
