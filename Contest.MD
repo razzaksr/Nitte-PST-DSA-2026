@@ -180,3 +180,10 @@ Consider the following is mysql table:
     and perform JDBC operations as listed below
 1. Adding new customer
 2. Fetch customers having same DOB
+
+Day14 Assignments:
+Pull the MySQL image from docker and Perform 
+create Customer(CustomerID, CustomerName, DOB, ContactNo)
+and perform JDBC operations as listed below
+1. Fetch Customers name ending with Patel
+2. Delete the customer by id
