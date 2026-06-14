@@ -1119,3 +1119,61 @@ Introduction to CI/CD pipe line
 GitHub Actions
 
 Overview of Cloud Providers and Kubernetes
+
+Docker:
+	virtualize the application layer of the OS
+	eg:
+		MySQL no need to install locally though we can use
+		Compile and Run java code without typical jdk installation
+	
+DockerHub:
+	images: version
+		code + libraries + jars
+	types: official, verified, third party
+		
+Docker Desktop: tool 
+	to push/ pull images with the docker hub
+	to create own image of our application
+	to compose multiple images int one
+
+
+purpose:
+
+Development: 
+	eg: Spring boot application
+		react/ angular
+		spring boot
+		oracle	
+	pull jdk, node, pull oracle
+
+
+Interface:
+	CLI
+	Desktop
+
+Commands:
+	login :
+		docker login
+Pull image:
+	docker pull mysql:latest
+view images:
+	docker images
+create containers:
+	docker run CONTAINERNAME image:tag
+	eg: docker run --name Accenture -e MYSQL_ROOT_PASSWORD mysql:latest
+
+inspect container:
+	docker inspect mysql:latest
+
+run containers in terminal mode
+	docker run -it CONTAINERNAME image:tag
+	eg: docker run --name mysql:latest /bin/bash
+	bash#: MySQL -h IPADDRESS -u root -p
+
+Perform CRUD in pulled MySQL containers
+
+	Volumes
+	Networks
+	Port
+
+CI/CD
